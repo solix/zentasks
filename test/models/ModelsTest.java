@@ -12,12 +12,10 @@ import static play.test.Helpers.*;
  */
 public class ModelsTest extends WithApplication {
 
-    @SuppressWarnings("deprecation")
     @Before
     public void setUp() {
         start(fakeApplication(inMemoryDatabase()));
-        new User("bob@gmail.com", "Bob", "secret").save();
-        new User("jane@gmail.com", "Jane", "secret").save();
+
     }
 
     @Test
